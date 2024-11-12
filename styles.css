@@ -17,7 +17,7 @@ body {
 header {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px); /* For Safari support */
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -66,7 +66,7 @@ nav ul li a:hover {
 section.content {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(7px);
-    -webkit-backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px); /* For Safari support */
     padding: 20px;
     margin-top: 0px;
     color: #fff; /* Ensure text is readable */
@@ -150,6 +150,49 @@ form button:hover {
     background: #555;
 }
 
+.social-media {
+    display: flex;
+    justify-content: center; /* Centers the icons horizontally */
+    gap: 15px; /* Space between each icon */
+    margin: 10px auto; /* Centers the container and adds spacing */
+}
+
+.social-media a {
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     width: 40px;
+     height: 40px;
+     background: transparent;
+     border: 2px solid #fff;
+     border-radius: 5px;
+     text-decoration: none;
+     margin-right: 10px;
+     transition: .5s;
+}
+
+.social-media a:hover {
+     background: #fff;
+}
+
+.social-media a i {
+     font-size: 20px;
+     color: #fff;
+     transition: .5s;
+}
+
+.social-media a:hover i {
+     color: #444;
+}
+
+iframe {
+    width: 640px; /* Fixed width for desktop */
+    height: 686px; /* Set a height for the form */
+    border: none;
+    margin: 0 auto; /* Center the form horizontally */
+    display: block; /* Make sure it is a block-level element */
+}
+
 /* Footer Styling */
 footer {
     background: rgba(0, 0, 0, 0.5);
@@ -165,6 +208,11 @@ footer p {
 
 /* Mobile Styling */
 @media (max-width: 768px) {
+	
+	form {
+        width: 100%;
+    }
+	
     header h1 {
         font-size: 1.8em;
     }
@@ -195,5 +243,26 @@ footer p {
 
     .container {
         width: 90%;
+    }
+	
+    .social-media {
+        display: flex;
+        justify-content: center;
+    }
+
+	.social-media a {
+        width: 35px; /* Smaller width */
+        height: 35px; /* Smaller height */
+    }
+
+    .social-media a i {
+        font-size: 18px; /* Adjust icon size */
+    }
+	
+	iframe {
+        width: 100%; /* Make the form take up the full width of the screen */
+        max-width: 480px; /* Limit the width to a maximum of 480px for better readability */
+        height: 600px; /* Adjust the height to fit mobile screens */
+        margin: 0 auto; /* Center the form */
     }
 }
