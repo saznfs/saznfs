@@ -173,14 +173,12 @@ footer p {
     }
     
     nav ul {
-        display: flex;
-        flex-direction: column;
         text-align: center;
     }
     
     nav ul li {
-        display: block;
-        margin: 10px 0;
+        display: inline;
+        margin: 0 6px;
     }
     
     nav ul li a {
