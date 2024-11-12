@@ -162,3 +162,40 @@ footer {
 footer p {
     margin: 0;
 }
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    header p {
+        font-size: 1em;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    section.content h2 {
+        font-size: 1.5em;
+    }
+    
+    .blog-post h3 {
+        font-size: 1.3em;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
