@@ -17,6 +17,7 @@ body {
 header {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -65,6 +66,7 @@ nav ul li a:hover {
 section.content {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
     padding: 20px;
     margin-top: 0px;
     color: #fff; /* Ensure text is readable */
